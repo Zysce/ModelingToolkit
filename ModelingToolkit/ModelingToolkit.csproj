@@ -1,13 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="AssimpNet" />
-    <PackageReference Include="HelixToolkit.Wpf" />
-    <PackageReference Include="System.Drawing.Common" />
+    <PackageReference Include="Avalonia.Desktop" />
+  <ItemGroup>
+
+  </ItemGroup>
+    <Compile Remove="MainWindow.xaml.cs" />
+    <Compile Remove="Samples\MainControl.xaml.cs" />
+    <Compile Remove="AssemblyInfo.cs" />
+    <Compile Remove="HelixModule\**\*.cs" />
+    <None Remove="App.xaml" />
+    <None Remove="MainWindow.xaml" />
+    <None Remove="Samples\MainControl.xaml" />
+    <AvaloniaXaml Remove="App.xaml" />
+    <AvaloniaXaml Remove="MainWindow.xaml" />
+    <AvaloniaXaml Remove="Samples\MainControl.xaml" />
+    <Page Remove="App.xaml" />
+    <Page Remove="MainWindow.xaml" />
+    <Page Remove="Samples\MainControl.xaml" />
+    <ApplicationDefinition Remove="App.xaml" />
+    <ApplicationDefinition Remove="MainWindow.xaml" />
   </ItemGroup>
 
   <ItemGroup>
