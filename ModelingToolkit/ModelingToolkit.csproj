@@ -7,9 +7,10 @@
   <ItemGroup>
     <PackageReference Include="AssimpNet" />
     <PackageReference Include="Avalonia.Desktop" />
-  <ItemGroup>
-
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="App.xaml.cs" />
     <Compile Remove="MainWindow.xaml.cs" />
     <Compile Remove="Samples\MainControl.xaml.cs" />
     <Compile Remove="AssemblyInfo.cs" />
@@ -28,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ModelingToolkit.Formats\ModelingToolkit.Core\ModelingToolkit.Core\ModelingToolkit.Core.csproj" />
+    <ProjectReference Include="..\ModelingToolkit.Formats\ModelingToolkit.Core\ModelingToolkit.Core.csproj" />
     <ProjectReference Include="..\ModelingToolkit.Formats\ModelingToolkit.Formats\ModelingToolkit.Formats.csproj" />
   </ItemGroup>
 
