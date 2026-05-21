@@ -1,7 +1,7 @@
 <Project>
   <ItemGroup>
     <PackageVersion Include="AssimpNet" Version="5.0.0-beta1" />
-    <PackageVersion Include="HelixToolkit.Wpf" Version="2.24.0" />
-    <PackageVersion Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageVersion Include="HelixToolkit.Wpf" Version="3.1.2" />
+    <PackageVersion Include="System.Drawing.Common" Version="10.0.8" />
   </ItemGroup>
 </Project>
