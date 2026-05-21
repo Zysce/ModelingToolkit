@@ -10,26 +10,32 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="App.xaml.cs" />
-    <Compile Remove="MainWindow.xaml.cs" />
-    <Compile Remove="Samples\MainControl.xaml.cs" />
+    <Compile Remove="AppWpf.xaml.cs" />
+    <Compile Remove="MainWindowWpf.xaml.cs" />
+    <Compile Remove="Samples\MainControlWpf.xaml.cs" />
     <Compile Remove="AssemblyInfo.cs" />
     <Compile Remove="HelixModule\**\*.cs" />
-    <None Remove="App.xaml" />
-    <None Remove="MainWindow.xaml" />
-    <None Remove="Samples\MainControl.xaml" />
-    <AvaloniaXaml Remove="App.xaml" />
-    <AvaloniaXaml Remove="MainWindow.xaml" />
-    <AvaloniaXaml Remove="Samples\MainControl.xaml" />
-    <Page Remove="App.xaml" />
-    <Page Remove="MainWindow.xaml" />
-    <Page Remove="Samples\MainControl.xaml" />
-    <ApplicationDefinition Remove="App.xaml" />
-    <ApplicationDefinition Remove="MainWindow.xaml" />
+    <None Remove="AppWpf.xaml" />
+    <None Remove="MainWindowWpf.xaml" />
+    <None Remove="Samples\MainControlWpf.xaml" />
+    <AvaloniaXaml Remove="AppWpf.xaml" />
+    <AvaloniaXaml Remove="MainWindowWpf.xaml" />
+    <AvaloniaXaml Remove="Samples\MainControlWpf.xaml" />
+    <Page Remove="AppWpf.xaml" />
+    <Page Remove="MainWindowWpf.xaml" />
+    <Page Remove="Samples\MainControlWpf.xaml" />
+    <ApplicationDefinition Remove="AppWpf.xaml" />
+    <ApplicationDefinition Remove="MainWindowWpf.xaml" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ModelingToolkit.Formats\ModelingToolkit.Core\ModelingToolkit.Core.csproj" />
+    <AvaloniaResource Include="**\*.axaml">
+      <SubType>Designer</SubType>
+    </AvaloniaResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ModelingToolkit.Formats\ModelingToolkit.Core\ModelingToolkit.Core\ModelingToolkit.Core.csproj" />
     <ProjectReference Include="..\ModelingToolkit.Formats\ModelingToolkit.Formats\ModelingToolkit.Formats.csproj" />
   </ItemGroup>
 

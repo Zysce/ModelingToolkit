@@ -12,7 +12,7 @@ using System.Windows.Controls;
 
 namespace ModelingToolkit.Samples
 {
-    public partial class MainControl : UserControl
+    public partial class MainControlWpf : UserControl
     {
         public ViewportController VpController { get; set; }
         public string LoadedFile { get; set; }

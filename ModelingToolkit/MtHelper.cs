@@ -1,9 +1,7 @@
 ﻿using ModelingToolkit.Core;
 using System.Collections.Generic;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Media.Media3D;
+using Avalonia.Media.Imaging;
 
 namespace ModelingToolkit
 {
@@ -22,24 +20,29 @@ namespace ModelingToolkit
             else return metadata[key] == "True";
         }
 
-        public static ImageSource GetImageSourceFromMaterial(MtMaterial material)
+        public static Bitmap? GetImageSourceFromMaterial(MtMaterial material)
         {
             using (MemoryStream memoryStream = new MemoryStream())
             {
-                // Save the bitmap to the memory stream in a format (e.g., PNG)
-                material.DiffuseTextureBitmap.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
+                if (material.DiffuseTextureBitmap == null)
+                    return null;
+
+                using var encoded = material.DiffuseTextureBitmap.Encode(SkiaSharp.SKEncodedImageFormat.Png, 100);
+                encoded.SaveTo(memoryStream);
                 memoryStream.Seek(0, SeekOrigin.Begin);
 
-                // Create a BitmapImage
-                BitmapImage bitmapImage = new BitmapImage();
-                bitmapImage.BeginInit();
-                bitmapImage.StreamSource = memoryStream;
-                bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
-                bitmapImage.EndInit();
-                bitmapImage.Freeze(); // To make it cross-thread accessible
-
-                return bitmapImage;
+                return new Bitmap(memoryStream);
             }
+        }
+
+        public class Rect3D
+        {
+            public double X { get; set; }
+            public double Y { get; set; }
+            public double Z { get; set; }
+            public double SizeX { get; set; }
+            public double SizeY { get; set; }
+            public double SizeZ { get; set; }
         }
 
         public static Rect3D GetBoundingBox(MtModel model)
@@ -50,8 +53,12 @@ namespace ModelingToolkit
             }
             MtShape modelBB = model.BoundingBox;
             Rect3D bb = new Rect3D();
-            bb.Location = new Point3D(modelBB.Position.X, modelBB.Position.Y, modelBB.Position.Z);
-            bb.Size = new Size3D(modelBB.Width, modelBB.Height, modelBB.Depth);
+            bb.X = modelBB.Position.X;
+            bb.Y = modelBB.Position.Y;
+            bb.Z = modelBB.Position.Z;
+            bb.SizeX = modelBB.Width;
+            bb.SizeY = modelBB.Height;
+            bb.SizeZ = modelBB.Depth;
             return bb;
         }
     }

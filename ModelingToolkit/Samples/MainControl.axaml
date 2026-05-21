@@ -1,0 +1,36 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ModelingToolkit.Samples.MainControl">
+  <DockPanel>
+    <Menu DockPanel.Dock="Top">
+      <MenuItem Header="Export">
+        <MenuItem Header="As Gltf" Click="MenuItem_ExportGltf"/>
+        <MenuItem Header="As Glb" Click="MenuItem_ExportGlb"/>
+        <MenuItem Header="As Fbx" Click="MenuItem_ExportFbx"/>
+      </MenuItem>
+    </Menu>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="30"/>
+      </Grid.RowDefinitions>
+      <Border Grid.Row="0" Background="Black" Name="ViewportPlaceholder"/>
+      <Grid Grid.Row="1">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Click="Button_Mesh">Mesh</Button>
+        <Button Grid.Column="1" Click="Button_Wireframe">Wireframe</Button>
+        <Button Grid.Column="2" Click="Button_skeleton">Skeleton</Button>
+        <Button Grid.Column="3" Click="Button_joints">Joints</Button>
+        <Button Grid.Column="4" Click="Button_boundingBox">Bounding Box</Button>
+        <Button Grid.Column="5" Click="Button_reload">Load</Button>
+      </Grid>
+    </Grid>
+  </DockPanel>
+</UserControl>
