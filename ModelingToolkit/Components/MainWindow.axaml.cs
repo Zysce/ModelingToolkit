@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace ModelingToolkit;
+namespace ModelingToolkit.Components;
 
 public partial class MainWindow : Window
 {

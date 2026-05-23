@@ -7,7 +7,7 @@ using ModelingToolkit.Core;
 using ModelingToolkit.Formats;
 using ModelingToolkit.Formats.MtAssimp;
 
-namespace ModelingToolkit.Samples;
+namespace ModelingToolkit.Components;
 
 public partial class MainControl : UserControl
 {

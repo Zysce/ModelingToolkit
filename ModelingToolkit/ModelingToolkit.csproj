@@ -10,22 +10,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="AppWpf.xaml.cs" />
-    <Compile Remove="MainWindowWpf.xaml.cs" />
-    <Compile Remove="Samples\MainControlWpf.xaml.cs" />
+    <Compile Remove="**\**\*.xaml.cs" />
     <Compile Remove="AssemblyInfo.cs" />
     <Compile Remove="HelixModule\**\*.cs" />
-    <None Remove="AppWpf.xaml" />
-    <None Remove="MainWindowWpf.xaml" />
-    <None Remove="Samples\MainControlWpf.xaml" />
-    <AvaloniaXaml Remove="AppWpf.xaml" />
-    <AvaloniaXaml Remove="MainWindowWpf.xaml" />
-    <AvaloniaXaml Remove="Samples\MainControlWpf.xaml" />
-    <Page Remove="AppWpf.xaml" />
-    <Page Remove="MainWindowWpf.xaml" />
-    <Page Remove="Samples\MainControlWpf.xaml" />
-    <ApplicationDefinition Remove="AppWpf.xaml" />
-    <ApplicationDefinition Remove="MainWindowWpf.xaml" />
+    <None Remove="**\**\*.xaml" />
+    <AvaloniaXaml Remove="**\**\*.xaml" />
+    <Page Remove="**\**\*.xaml" />
+    <ApplicationDefinition Remove="**\**\*.xaml" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,7 +1,7 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="clr-namespace:ModelingToolkit.Samples"
-        x:Class="ModelingToolkit.MainWindow"
+        xmlns:local="clr-namespace:ModelingToolkit.Components"
+        x:Class="ModelingToolkit.Components.MainWindow"
         Width="800" Height="450" Title="MainWindow">
   <local:MainControl />
 </Window>

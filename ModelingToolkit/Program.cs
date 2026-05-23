@@ -1,5 +1,6 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
+using ModelingToolkit.Components;
 
 namespace ModelingToolkit;
 
@@ -13,5 +14,6 @@ public static class Program
 	public static AppBuilder BuildAvaloniaApp()
 		=> AppBuilder.Configure<App>()
 			.UsePlatformDetect()
-			.LogToTrace();
+			.LogToTrace()
+			.UseSkia();
 }
