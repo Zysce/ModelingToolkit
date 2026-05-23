@@ -6,12 +6,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace ModelingToolkit
+namespace ModelingToolkit;
+
+/// <summary>
+/// Interaction logic for App.xaml
+/// </summary>
+public partial class AppWpf : Application
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class AppWpf : Application
-    {
-    }
 }

@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:ModelingToolkit.Samples"
         xmlns:h="http://helix-toolkit.org/wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        Height="450"
+        Width="800">
     <Grid>
-        <local:MainControl />
+        <local:MainControl/>
     </Grid>
 </Window>

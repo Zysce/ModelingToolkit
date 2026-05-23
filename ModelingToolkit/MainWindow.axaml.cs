@@ -1,11 +1,10 @@
 using Avalonia.Controls;
 
-namespace ModelingToolkit
+namespace ModelingToolkit;
+
+public partial class MainWindow : Window
 {
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-        }
-    }
+	public MainWindow()
+	{
+	}
 }

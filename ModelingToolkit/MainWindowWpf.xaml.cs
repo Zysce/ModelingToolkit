@@ -1,12 +1,11 @@
 ﻿using System.Windows;
 
-namespace ModelingToolkit
+namespace ModelingToolkit;
+
+public partial class MainWindowWpf : Window
 {
-    public partial class MainWindowWpf : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-    }
+	public MainWindow()
+	{
+		InitializeComponent();
+	}
 }
