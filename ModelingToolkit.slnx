@@ -2,5 +2,5 @@
   <Project Path="ModelingToolkit.Avalonia/ModelingToolkit.Avalonia.csproj" />
   <Project Path="ModelingToolkit.Formats/ModelingToolkit.Core/ModelingToolkit.Core/ModelingToolkit.Core.csproj" />
   <Project Path="ModelingToolkit.Formats/ModelingToolkit.Formats/ModelingToolkit.Formats.csproj" />
-  <Project Path="ModelingToolkit/ModelingToolkit.csproj" />
+  <Project Path="ModelingToolkit.HelixModule/ModelingToolkit.HelixModule.csproj" />
 </Solution>
