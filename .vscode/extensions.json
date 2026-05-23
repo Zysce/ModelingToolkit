@@ -6,6 +6,7 @@
         "editorconfig.editorconfig",
         "davidanson.vscode-markdownlint",
         "github.vscode-pull-request-github",
-        "github.vscode-github-actions"
+        "github.vscode-github-actions",
+        "avaloniateam.vscode-avalonia"
     ]
 }
