@@ -29,12 +29,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <AvaloniaResource Include="**\*.axaml">
-      <SubType>Designer</SubType>
-    </AvaloniaResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ModelingToolkit.Formats\ModelingToolkit.Core\ModelingToolkit.Core\ModelingToolkit.Core.csproj" />
     <ProjectReference Include="..\ModelingToolkit.Formats\ModelingToolkit.Formats\ModelingToolkit.Formats.csproj" />
   </ItemGroup>

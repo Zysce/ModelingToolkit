@@ -6,7 +6,6 @@ namespace ModelingToolkit
     {
         public MainWindow()
         {
-            InitializeComponent();
         }
     }
 }
